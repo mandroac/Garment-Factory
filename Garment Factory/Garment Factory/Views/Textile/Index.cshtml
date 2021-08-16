@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Garment_Factory.Models.Textile>
+
+@{
+    ViewBag.Title = "Textile";
+}
+
+<h2>Textile</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableSquare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PricePerSquare)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Thickness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Color)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Supplier.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Warehouse.Address)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvailableSquare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PricePerSquare)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Thickness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Color)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Supplier.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Warehouse.Address)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Textile_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Textile_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Textile_ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Garment_Factory.Models.DeliveryInfo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Delivery</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Order_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DispatchDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ArrivalDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TrackingNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Received)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Order_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DispatchDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArrivalDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrackingNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliveryPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Received)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.DeliveryInfo_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.DeliveryInfo_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.DeliveryInfo_ID })
+        </td>
+    </tr>
+}
+
+</table>

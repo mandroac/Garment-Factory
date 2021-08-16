@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9bdfbe3568674b6caf2cc4d0e46f8b73" Name="Diagram1" ZoomLevel="64">
+        <EntityTypeShape EntityType="HolovatyiDBModel.Client" Width="1.5" PointX="5.375" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.DeliveryInfo" Width="1.5" PointX="5.375" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Employees" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Equipment" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Furniture" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Order" Width="1.5" PointX="2.875" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Product" Width="1.5" PointX="0.875" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Supplier" Width="1.5" PointX="5.125" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.sysdiagrams" Width="1.5" PointX="0.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Textile" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HolovatyiDBModel.Warehouse" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Order_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Order_DeliveryInfo" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Employees_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Equipment_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Furniture_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Order_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Product_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Textile_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="HolovatyiDBModel.FK_Textile_Warehouse" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
